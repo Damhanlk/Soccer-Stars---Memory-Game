@@ -53,14 +53,16 @@
                 <span>Rule Book</span>
              </button>
 
-            <button class="menu-item p-2 m-2 sound-btn" type="button" data-toggle="modal" data-target="#soundSettingsModal">
-                <img class="main-menu-icon" src="assets/images/whistle.png" alt="Sound Toggle Button">
+            <button class="menu-item p-2 m-2 sound-btn" type="button" id="sound" aria-label="sound-button" onclick="togglePlay()">
+                <img class="main-sound-icon" src="assets/images/whistle.png" alt="Sound Toggle Button">
                 <span>Sound On / Off</span>
+                <audio id="mainAudio" src="assets/audio/main_menu.mp3" loop></audio>
             </button>
         </div>
     </div>
 </div>
 </div>
+
 
     <!-- Kick off (Play Game) Modal - taken from https://getbootstrap.com/docs/4.0/components/modal/ -->
     <div class="modal fade" id="playGameModal" tabindex="-1" role="dialog" aria-labelledby="playGameModal"
@@ -73,19 +75,16 @@
                 <div class="modal-list-items ">
                     <ul>
                         <li>
-                            <p>Soccer Stars is the memory game for all ages! <br>Please choose a level. </p>
+                            <p>Soccer Stars is the memory game for all ages! <br>Please choose a level. <br>(PS... Check out our Rule Book)</p>
                         </li>
                         <li>
-                            <button type="button" class="btn menu-button button-click" data-toggle="modal"
-                                data-target="#rulesModal" data-dismiss="modal">Group Stage (Easy)</button>
+                            <button type="button" class="btn menu-button button-click"  onclick="window.location.href='game.html?mode=Easy';">Group Stage (Easy)</button>
                         </li>
                         <li>
-                            <button type="button" class="btn menu-button button-click" data-toggle="modal"
-                                data-target="#newGameModal" data-dismiss="modal">Knockout Stage (Medium)</button>
+                            <button type="button" class="btn menu-button button-click" onclick="window.location.href='game.html?mode=Normal';">Knockout Stage (Normal)</button>
                         </li>
                         <li>
-                            <button type="button" class="btn menu-button button-click" data-toggle="modal"
-                                data-target="#newGameModal" data-dismiss="modal">Final (Hard)</button>
+                            <button type="button" class="btn menu-button button-click" onclick="window.location.href='game.html?mode=Hard';">Cup Final (Hard)</button>
                         </li>
                     </ul>
                 </div>
@@ -106,19 +105,21 @@
                         <li>
                             <p>Group Stage - Find 6 matching pairs</p>
                             <p>Knockout Stage - Find 9 matching pairs</p>
-                            <p>Final - Find 12 matching pairs</p>
+                            <p>Cup Final - Find 12 matching pairs</p>
                         </li>
                         <li>
-                            <p>Test your memory against the clock! Click on cards to have them flip around, try to find all of the matching pairs and book yourself a spot in the final!</p>
+                            <p>Test your memory against the clock! Click on cards to have them flip around, if they match, you're in luck! <br>Try to find all of the matching pairs and book yourself a spot in the final!</p>
                         </li>
                 </div>
             </div>
         </div>
     </div>
 
+
+
   
 
-    <script>src="game.js"</script>
+    <script>src="assets/game.js"</script>
      <!-- Jquery bootstrap and popper js scripts added for more functionality, import links taken from my own MS1 project -->
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
