@@ -40,7 +40,7 @@
     <!-- Menu Container with button options, calling Modals with Game difficulties / Game Rules and Sound Toggle -->
     <!-- Modal taken from https://getbootstrap.com/docs/4.0/components/modal/ -->
 
-<div class="container-fluid game-menu-container">
+<div class="container-fluid game-menu-container center">
     <div id="home-page">
         <div class="flex-column d-flex align-items-center landing-spacing">
             <button class="menu-item p-2 m-2 play-game-btn"  type="button" data-toggle="modal" data-target="#playGameModal">
@@ -55,38 +55,68 @@
 
             <button class="menu-item p-2 m-2 sound-btn" type="button" data-toggle="modal" data-target="#soundSettingsModal">
                 <img class="main-menu-icon" src="assets/images/whistle.png" alt="Sound Toggle Button">
-                <span>Sound</span>
+                <span>Sound On / Off</span>
             </button>
         </div>
     </div>
 </div>
 </div>
 
-<!-- Kick off (Play Game) Modal - taken from https://getbootstrap.com/docs/4.0/components/modal/ -->
-    <div class="modal fade" id="playGameModal" tabindex="-1" role="dialog" aria-labelledby="playGameModal" aria-hidden="true">
+    <!-- Kick off (Play Game) Modal - taken from https://getbootstrap.com/docs/4.0/components/modal/ -->
+    <div class="modal fade" id="playGameModal" tabindex="-1" role="dialog" aria-labelledby="playGameModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content mainMenu">
+                <div class="modal-header d-block">
+                  <h4 class="modal-title text-center">Kick Off</h4>
+                </div>
+                <div class="modal-list-items ">
+                    <ul>
+                        <li>
+                            <p>Soccer Stars is the memory game for all ages! <br>Please choose a level. </p>
+                        </li>
+                        <li>
+                            <button type="button" class="btn menu-button button-click" data-toggle="modal"
+                                data-target="#rulesModal" data-dismiss="modal">Group Stage (Easy)</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn menu-button button-click" data-toggle="modal"
+                                data-target="#newGameModal" data-dismiss="modal">Knockout Stage (Medium)</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn menu-button button-click" data-toggle="modal"
+                                data-target="#newGameModal" data-dismiss="modal">Final (Hard)</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rule Book Modal -->
+
+    <div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header text-center">
-                    <ul class="main-modal-list">
+                <div class="modal-header d-block">
+                    <h4 class="modal-title text-center">Rule Book</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class = "rules-list">
                         <li>
-                            <h4 class="modal-title align-items-center justify-content-center p-2" id="kickOffModal">Welcome to Soccer Stars!</h4>
-                       </li>
-                       <li>
-                            <h5 class="justify-content-center p-2">The football themed memory game designed for all ages. Check out our rule book below and test your wits in three different levels!</h5>
-                      </li>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" id="clickbutton">&times;</span>
-                    </button>
-     </div>
+                            <p>Group Stage - Find 6 matching pairs</p>
+                            <p>Knockout Stage - Find 9 matching pairs</p>
+                            <p>Final - Find 12 matching pairs</p>
+                        </li>
+                        <li>
+                            <p>Test your memory against the clock! Click on cards to have them flip around, try to find all of the matching pairs and book yourself a spot in the final!</p>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
-
-     
-        
-
-    <!-- Main Menu Modal -->
-    
-   
+  
 
     <script>src="game.js"</script>
      <!-- Jquery bootstrap and popper js scripts added for more functionality, import links taken from my own MS1 project -->

@@ -17,6 +17,7 @@
 .header {
     font-family: "Graduate", sans-serif;
     color: #EAFDF8;
+    padding-bottom:50%;
 }
 
 
@@ -29,24 +30,24 @@ body {
     background-size: cover;
     overflow: hidden;
     text-align: center;
+    font-family: "Graduate", sans-serif;
 }
 
 /* Home Menu Styling */ 
 
 .game-menu-container {
     background-color: #6C0E23;
-    width: 45vw;
     border-radius: 10px;
 }
 
 .menu-item {
     background-color: #000000;
-    border-color: #6C0E23;
+    border-color: #fff;
     border-radius: 10px;
     height: 50px;
-    font-family: "Graduate", sans-serif;
     font-weight: bold;
     color: #EAFDF8;
+    padding-top: 10%;
 }
 
 .main-menu-icon {
@@ -55,8 +56,28 @@ body {
 
 /* Modal Stlying */
 
+.modal-title {
+ color: #6C0E23;
+}
+
+
+ .modal-list-items {
+    
+    color: #6C0E23;
+}
+
 .main-modal-list {
     list-style: none;
     font-family: "Graduate", sans-serif;
     color: #6C0E23;
+}
+
+.rules-list {
+    list-style-type: none;
+}
+
+.menu-button {
+    border-color: #000000;
+    padding: 10px;
+    margin: 5px;
 }
