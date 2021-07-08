@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Ubuntu:wght@500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* font style */
+
+.title-text, .subtitle-text {
+    font-family: "Graduate", sans-serif;
+    color: #EAFDF8;
+    position: center;
+}
+
+.game-info-container {
+    font-family: "Ubuntu", sans-serif;
+    color: #EAFDF8;
+    position: center;
+}
+
+
+
+body {
+    background: url(../images/bg_img.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Home Menu Styling */ 
+
+.game-menu-container {
+    background-color: #6C0E23;
+    width: 45vw;
+    border-radius: 10px;
+}
+
+.menu-item {
+    background-color: #000000;
+    border-color: #6C0E23;
+    border-radius: 10px;
+    height: 50px;
+    font-family: "Graduate", sans-serif;
+    font-weight: bold;
+    color: #EAFDF8;
+}
+
+.main-menu-icon {
+    height: 30px;
+}
+
