@@ -14,10 +14,9 @@
     position: center;
 }
 
-.game-info-container {
-    font-family: "Ubuntu", sans-serif;
+.header {
+    font-family: "Graduate", sans-serif;
     color: #EAFDF8;
-    position: center;
 }
 
 
@@ -29,6 +28,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
+    text-align: center;
 }
 
 /* Home Menu Styling */ 
@@ -53,3 +53,10 @@ body {
     height: 30px;
 }
 
+/* Modal Stlying */
+
+.main-modal-list {
+    list-style: none;
+    font-family: "Graduate", sans-serif;
+    color: #6C0E23;
+}
