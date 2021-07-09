@@ -123,6 +123,8 @@ body {
     background-color: #E2C044;
     height: 175px;
     width: 125px;
+    border-color: #fff;
+    border-width: 5px;
   }
 
   .reverse-side {
@@ -151,5 +153,22 @@ body {
     grid-template-columns: repeat(4, auto);
     grid-gap: 7.5px;
     justify-content: center;
-    
   }
+
+  .game-information-container-normal {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 7.5px;
+    justify-content: center;
+  }
+
+  .game-information-container-hard {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 7.5px;
+    justify-content: center;
+  }
+
+  
